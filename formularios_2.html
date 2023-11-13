@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Cursos</title>
+  </head>
+  <body>
+    <h1>Cursos</h1>
+    <form method="post" action="recibido.html">
+      <table>
+        <tr>
+          <td><label for="idCurso">Id Curso:</label></td>
+          <td><input type="number" name="idCurso" /></td>
+        </tr>
+        <tr>
+          <td><label for="nombre">Nombre curso:</label></td>
+          <td>
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Escriba el nombre del curso"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="creditos">Créditos:</label></td>
+          <td><input type="number" name="creditos" /></td>
+        </tr>
+        <tr>
+          <td><label for="tutor">Tutor:</label></td>
+          <td><input type="text" name="tutor" id="tutor" /></td>
+        </tr>
+        <tr>
+          <td><label for="emailTutor">Email tutor:</label></td>
+          <td><input type="email" name="emailTutor" id="emailTutor" /></td>
+        </tr>
+        <tr>
+          <td><label for="area">Area:</label></td>
+          <td>
+            <select name="area" id="area">
+              <option selected>---Seleccione un area---</option>
+              <option>Matemáticas</option>
+              <option>Letras</option>
+              <option>Informática</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Tipo de formación</td>
+          <td>
+            <input type="radio" name="reglado" id="reglada" value="regrada" />
+            Reglada
+            <input
+              type="radio"
+              name="reglado"
+              id="reglada"
+              value="no_regrada"
+            />
+            NO Reglada
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Enviar Información Curso" /></td>
+          <td><input type="reset" value="Limpiar formulario" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
