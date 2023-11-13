@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    
+
+    <form action="listas.html" method="get">
+        <table width="60%">
+            <tr>
+                <td><label for="nombre">Nombre</label></td>
+                <td><input type="text" name="nombre" placeholder="escriba su nombre"/></td>
+            </tr>
+            <tr>
+                <td><label for="constrasena">Constraseña</label></td>
+                <td><input type="password" placeholder="Escriba contraseña"/></td>
+            </tr>
+            <tr>
+                <td><label for="genero">Genero:</label></td>
+                <td><input type="radio" name="genero" value="M"> Mujer
+        <input type="radio" name="genero" value="H"> Hombre</td>
+            </tr>
+            <tr>
+                <td><label for="idiomas" >Idiomas:</label></td>
+                <td><input type="checkbox" name="idiomas" value="I">Inglés
+        <input type="checkbox" name="idiomas" value="F">Francés
+        <input type="checkbox" name="idiomas" value="E">Español</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Enviar" />  <input type="reset" value="Limpiar datos "/></td>               
+            </tr>
+        </table>
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios 2</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <form action="mailto:ggp2002es@gmail.com" method="post">
+        <table width="60%">
+            <tr>
+                <td><label for="usuario">Usuario</label></td>
+                <td><input type="text" name="usuario" placeholder="escriba su usuario" /></td>
+            </tr>
+            <tr>
+                <td><label for="constrasena">Constraseña</label></td>
+                <td><input type="password" placeholder="Escriba contraseña" /></td>
+            </tr>
+            <tr>
+                <td><label for="genero">Genero:</label></td>
+                <td><input type="radio" name="genero" value="M"> Mujer
+                    <input type="radio" name="genero" value="H"> Hombre
+                </td>
+            </tr>
+            <tr>
+                <td><label for="lenguajes">Lenguajes de Programación:</label></td>
+                <td><input type="checkbox" name="lenguajes" value="HTML">HTML
+                    <input type="checkbox" name="lenguajes" value="Java">Java
+                    <input type="checkbox" name="lenguajes" value="SQL">SQL
+                </td>
+            </tr>
+            <tr>
+                <td>Comunidad en la que realizó sus estudios :</td>
+                <td>
+                    <select name="comunidades">
+                        <option value="Madrid">Madrid</option>
+                        <option value="Andalucía" >Andalucía</option>
+                        <option value="CastillaLeon">Castilla Leon</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Enviar" /> <input type="reset" value="Limpiar datos " />
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+</body>
+
+</html>
