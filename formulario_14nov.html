@@ -16,7 +16,7 @@
             <label for="nombre">Escribe tu nombre:</label>
           </td>
           <td>
-            <input type="text" name="nombre" id="nombre" />
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
           </td>
         </tr>
         <tr>
@@ -24,7 +24,7 @@
             <label for="apellido">Escribe tu apellido:</label>
           </td>
           <td>
-            <input type="text" name="apellido" id="apellido" />
+            <input type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido"/>
           </td>
         </tr>
         <tr>
@@ -32,7 +32,7 @@
             <label for="email">Escribe tu email :</label>
           </td>
           <td>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" placeholder="Escribe tu email"/>
           </td>
         </tr>
         <tr>
@@ -51,7 +51,8 @@
           </td>
         </tr>
         <tr>
-          <td>¿Qué asignaturas has estudiado?</td>
+          <td><label for="html">¿Qué asignaturas has estudiado?</label>
+        </td>
           <td>
             <input type="checkbox" name="html" id="html" />html
             <input type="checkbox" name="css" id="css" />css
@@ -59,25 +60,32 @@
           </td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
+          <td><label for="alineacion">Selecciona tu alineación ideal</label>
+        </td>
+          <td>
+            <select name="alineacion" id="alineacion" size="5" multiple>
+                <option value="Cristiano">Cristiano</option>
+                <option value="Messi">Messi</option>
+                <option value="Chigrinsky">Chigrinsky</option>
+                <option value="Sergio Ramos">Sergio Ramos</option>
+                <option value="Shevcheniko">Shevcheniko</option>
+
+            </select>
+          </td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
+          <td><label for="comentarios">¿Qué mejoraría de este curso?</label></td>
+          <td>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+          </td>
         </tr>
         <tr>
-          <td></td>
-          <td></td>
+          <td colspan="2">
+            <input type="submit" value="Enviar">
+          </td>
+         
         </tr>
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
+        
       </table>
     </form>
   </body>
