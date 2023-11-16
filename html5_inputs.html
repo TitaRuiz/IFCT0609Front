@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 5</title>
+  </head>
+  <body>
+    <h1>Inputs HTML5</h1>
+    <form action="recibido.html" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" />
+      <br /><br />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" name="email" id="email" />
+      <br /><br />
+
+      <label for="url">URL:</label>
+      <input type="url" name="url" id="url" placeholder="Escriba la URL" />
+      <br /><br />
+
+      <label for="fecha">Fecha: </label>
+      <input type="date" name="fecha" id="fecha" />
+      <br /><br />
+
+      <label for="tiempo">Tiempo: </label>
+      <input type="time" name="tiempo" id="tiempo" />
+      <br /><br />
+
+      <label for="fecha_hora">Fecha y hora :</label>
+      <input type="datetime-local" name="fecha_hora" id="fecha_hora" /> UTC
+      <br /><br />
+
+      <label for="mes">Mes : </label>
+      <input type="month" name="mes" id="mes" />
+      <br /><br />
+
+      <label for="semana">Semana :</label>
+      <input type="week" name="semana" id="semana" />
+      <br /><br />
+
+      <label for="numero">Número (min -10 y max 10)</label>
+      <input type="number" name="numero" id="numero" min="-10" max="10" />
+      <br /><br />
+
+      <label for="telefono">Telefono : </label>
+      <input
+        type="tel"
+        name="telefono"
+        id="telefono"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+      />
+      <br /><br />
+
+      <label for="busqueda">Termino de búsqueda </label>
+      <input type="search" name="busqueda" id="busqueda" />
+      <br /><br />
+
+      <label for="color">Color : </label>
+      <input type="color" name="color" id="color" />
+      <br /><br />
+
+      <input type="submit" value="Enviar" /><br/><br/>
+    </form>
+  </body>
+</html>
